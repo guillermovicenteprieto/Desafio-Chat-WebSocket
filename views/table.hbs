@@ -1,0 +1,36 @@
+<div class="entry">
+  {{#if productsList}}
+  <h4 class="mt-4"> Lista de Productos </h4>
+    <table class="table table-striped table-hover">
+      <thead class="bg-warning">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Titulo</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Imagen</th>
+        </tr>
+      </thead>
+      <tbody class="bg-light">
+        {{#each productsList}}
+          <tr>
+            <th scope="row">{{this.id}}</th>
+            <td>{{this.title}}</td>
+            <td>{{this.price}}</td>
+            <td><img
+                src="{{this.thumbnail}}"
+                alt="{{this.title}}"
+                width="25"
+              /></td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  {{else}}
+    <div>
+      <h4 class="mt-4">No hay productos agregados</h4>
+    </div>
+  {{/if}}
+
+{{>navSocket}}
+{{>formchat}}
+</div>

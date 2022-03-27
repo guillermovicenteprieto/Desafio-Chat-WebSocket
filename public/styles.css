@@ -1,0 +1,25 @@
+body{
+    background-color: #bcbebe;
+}
+.chatContainer{
+    background-color: #f7f0f0;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 10px;
+    padding: 20px;
+}
+.msgsChat{
+    background-color: #e5faf0;
+}
+.email{
+    color: blue;
+}
+.dateMsg{
+    color: #3d3109;
+}
+.msg{
+    color: #1f8628;
+    font: bold;
+    font-style: italic;
+    font-size: larger;
+}
